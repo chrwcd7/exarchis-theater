@@ -66,13 +66,13 @@ export default function ImageGallery({ images = [] }: { images: string[] }) {
     <>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {images.map((src, index) => (
-          <div key={index} onClick={() => openSlider(index)} className="flex">
+          <div key={index} onClick={() => openSlider(index)} className="flex justify-center">
             <Image
               src={src}
               alt={`Exarchis image ${index + 1}`}
               width="300"
               height="300"
-              className="self-center object-cover aspect-auto cursor-pointer transition-transform transform hover:scale-105"
+              className="max-h-60 self-center object-cover aspect-auto cursor-pointer transition-transform transform hover:scale-105"
             />
           </div>
         ))}
