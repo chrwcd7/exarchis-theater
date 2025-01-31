@@ -40,7 +40,7 @@ export default function NavBar() {
     <div className={`bg-black w-full flex flex-col justify-center items-center p-4 sm:flex-row`}>
       <div className="flex flex-row gap-4">
         <Link href={'/'}>
-          <Image src={logo} alt="Exarchis logo" className="w-24 h-24" priority />
+          <Image src={logo} alt="Exarchis logo" className="w-24 h-auto aspect-auto" priority />
         </Link>
         <button
           className={`text-white transition-transform duration-300 flex items-center ${
