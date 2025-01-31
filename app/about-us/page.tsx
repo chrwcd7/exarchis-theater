@@ -41,14 +41,14 @@ export default function AboutUs() {
           είναι εμφανής σε κάθε παράσταση που παρουσιάζει, προσφέροντας αξέχαστες εμπειρίες στους θεατές.
         </p>
       </section>
-      <section className="mb-8 bg-white p-6 rounded-lg shadow-md flex flex-col items-center sm:items-start">
+      <section className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center sm:items-start">
         <h1 className="text-4xl font-bold mb-4 text-center">Ντίνος Σπυρόπουλος</h1>
         <Image
           src={dinosSpyropoulosImg}
           alt="Ντίνος Σπυρόπουλος"
           width={200}
           height={200}
-          className="mb-4 rounded-full object-cover"
+          className="rounded-full object-cover"
         />
         <p className="text-lg leading-relaxed">
           Ο Ντίνος Σπυρόπουλος είναι ένας εξαιρετικά ταλαντούχος ηθοποιός και σκηνοθέτης με πολυετή εμπειρία στο θέατρο. Με

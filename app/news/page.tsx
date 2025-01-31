@@ -12,7 +12,7 @@ const News = () => {
       {articles.map((article) => (
         <article
           key={article.id}
-          className="mb-8 bg-white p-6 rounded-lg shadow-md transition-transform transform hover:scale-105"
+          className="mb-8 bg-white p-6 rounded-lg shadow-md transition-transform transform hover:scale-105 last:mb-0"
         >
           <Link href={`/news/${article.id}`}>
             <h2 className="text-2xl font-bold mb-2 text-blue-500">{article.title}</h2>
