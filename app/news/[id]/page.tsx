@@ -4,6 +4,7 @@ import React from 'react';
 import { useParams } from 'next/navigation';
 
 import { articles } from '../articles';
+import ImageGallery from '@/app/components/ImageGallery';
 
 const NewsDetails = () => {
   const params = useParams<{ id: string }>();
@@ -17,9 +18,13 @@ const NewsDetails = () => {
 
   return (
     <>
-      <h1 className="text-3xl font-bold mb-6">{article.title}</h1>
-      <p className="text-gray-600 mb-4">{article.date}</p>
-      <p className="text-lg leading-relaxed">{article.content}</p>
+      <h2 className="text-2xl mb-2 font-bold">{article.title}</h2>
+      <p className="text-secondary-foreground mb-4 font-normal italic">{article.date}</p>
+      <div
+        className="text-lg leading-relaxed text-foreground font-normal mb-8"
+        dangerouslySetInnerHTML={{ __html: article.content }}
+      ></div>
+      <ImageGallery images={article.images} />
     </>
   );
 };
