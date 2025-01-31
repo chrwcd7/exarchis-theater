@@ -2,11 +2,14 @@
 
 import React, { useState, useEffect, useCallback } from 'react';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 import { useSwipeable } from 'react-swipeable';
 
 export default function ImageGallery({ images = [] }: { images: string[] }) {
   const [isOpen, setIsOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const pathname = usePathname();
 
   const openSlider = useCallback((index: number) => {
     setCurrentImageIndex(index);
@@ -69,10 +72,11 @@ export default function ImageGallery({ images = [] }: { images: string[] }) {
           <div key={index} onClick={() => openSlider(index)} className="flex justify-center">
             <Image
               src={src}
-              alt={`Exarchis image ${index + 1}`}
+              alt={`${pathname} image ${index + 1}`}
               width="300"
               height="300"
               className="max-h-60 self-center object-cover aspect-auto cursor-pointer transition-transform transform hover:scale-105"
+              priority={pathname === '/archive'}
             />
           </div>
         ))}
