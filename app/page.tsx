@@ -9,7 +9,7 @@ export default function Home() {
       </section>
       <section className="text-center mb-8">
         <div className="inline-block">
-          <Image src="/exarchis_cover.jpg" alt="Exarchis cover image" width="430" height="360" />
+          <Image src="/exarchis_cover.jpeg" alt="Exarchis cover image" width="430" height="360" />
         </div>
       </section>
       <section className="mb-8">
