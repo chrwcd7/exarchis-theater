@@ -43,8 +43,11 @@ const ContactUs = () => {
       <form className="bg-white p-8 rounded-lg shadow-md w-full max-w-md" onSubmit={handleSubmit}>
         <h2 className="text-2xl font-bold mb-6 text-gray-800">Επικοινωνήστε μαζί μας</h2>
         <div className="mb-4">
-          <label className="block text-gray-700 font-bold mb-2">Όνομα:</label>
+          <label htmlFor="name" className="block text-gray-700 font-bold mb-2">
+            Όνομα:
+          </label>
           <input
+            id="name"
             type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
@@ -53,8 +56,11 @@ const ContactUs = () => {
           />
         </div>
         <div className="mb-4">
-          <label className="block text-gray-700 font-bold mb-2">Email:</label>
+          <label htmlFor="email" className="block text-gray-700 font-bold mb-2">
+            Email:
+          </label>
           <input
+            id="email"
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -63,15 +69,18 @@ const ContactUs = () => {
           />
         </div>
         <div className="mb-4">
-          <label className="block text-gray-700 font-bold mb-2">Μήνυμα:</label>
+          <label htmlFor="message" className="block text-gray-700 font-bold mb-2">
+            Μήνυμα:
+          </label>
           <textarea
+            id="message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             className="w-full px-3 py-2 border rounded-lg"
             required
           />
         </div>
-        <button type="submit" className="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600">
+        <button type="submit" className="w-full bg-teal-700 text-white py-2 rounded-lg hover:bg-teal-800">
           Αποστολή
         </button>
       </form>
