@@ -15,6 +15,8 @@ import {
 } from './NavigationMenu';
 import logo from '../../public/exarchis_logo.jpg';
 import DarkModeToggle from './DarkModeToggle';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 export default function NavBar() {
   const pathname = usePathname();
@@ -40,10 +42,12 @@ export default function NavBar() {
         <Link href={'/'}>
           <Image src={logo} alt="Exarchis logo" className="w-24 h-24 mb-6 sm:mb-0" priority />
         </Link>
-        <button className="sm:hidden text-white" onClick={toggleMenu} aria-label="Toggle navigation menu">
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-          </svg>
+        <button
+          className={`sm:hidden text-white transition-transform duration-300 ${isMenuOpen ? 'rotate-90' : ''}`}
+          onClick={toggleMenu}
+          aria-label="Toggle navigation menu"
+        >
+          <FontAwesomeIcon icon={faBars} className="w-6 h-6" />
         </button>
       </div>
       <NavigationMenu className={`${isMenuOpen ? 'block' : 'hidden'} sm:block`}>
