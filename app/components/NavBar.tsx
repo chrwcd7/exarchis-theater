@@ -14,6 +14,7 @@ import {
   navigationMenuTriggerStyle,
 } from './NavigationMenu';
 import logo from '../../public/exarchis_logo.jpg';
+import DarkModeToggle from './DarkModeToggle';
 
 export default function NavBar() {
   const pathname = usePathname();
@@ -46,7 +47,7 @@ export default function NavBar() {
         </button>
       </div>
       <NavigationMenu className={`${isMenuOpen ? 'block' : 'hidden'} sm:block`}>
-        <NavigationMenuList className="flex flex-col items-start sm:flex-row sm:ml-12">
+        <NavigationMenuList className="flex flex-col items-start sm:flex-row sm:ml-4">
           <NavigationMenuItem>
             <Link href="/theater" legacyBehavior passHref>
               <NavigationMenuLink
@@ -113,6 +114,7 @@ export default function NavBar() {
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
+          <DarkModeToggle />
         </NavigationMenuList>
       </NavigationMenu>
     </div>
