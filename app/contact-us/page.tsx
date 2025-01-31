@@ -1,16 +1,40 @@
 'use client';
 
 import React, { useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const ContactUs = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const mailtoLink = `mailto:exarhistheatro@gmail.com?subject=Υποβολή φόρμας επικοινωνίας&body=Όνομα: ${name}%0AEmail: ${email}%0AΜήνυμα: ${message}`;
-    window.open(mailtoLink, '_blank');
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          to: 'exarhistheatro@gmail.com',
+          subject: 'Υποβολή φόρμας επικοινωνίας Εξ Αρχής',
+          text: `Όνομα: ${name}\nEmail: ${email}\nΜήνυμα: ${message}`,
+        }),
+      });
+
+      if (response.ok) {
+        toast.success('Το μήνυμα στάλθηκε επιτυχώς!');
+        setName('');
+        setEmail('');
+        setMessage('');
+      } else {
+        toast.error('Αποτυχία αποστολής μηνύματος.');
+      }
+    } catch (error) {
+      toast.error('Αποτυχία αποστολής μηνύματος.');
+    }
   };
 
   return (
@@ -23,8 +47,8 @@ const ContactUs = () => {
             type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 border rounded-lg"
             required
-            className="w-full px-3 py-2 border border-gray-300 rounded-lg"
           />
         </div>
         <div className="mb-4">
@@ -33,8 +57,8 @@ const ContactUs = () => {
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            className="w-full px-3 py-2 border rounded-lg"
             required
-            className="w-full px-3 py-2 border border-gray-300 rounded-lg"
           />
         </div>
         <div className="mb-4">
@@ -42,14 +66,15 @@ const ContactUs = () => {
           <textarea
             value={message}
             onChange={(e) => setMessage(e.target.value)}
+            className="w-full px-3 py-2 border rounded-lg"
             required
-            className="w-full px-3 py-2 border border-gray-300 rounded-lg h-32"
           />
         </div>
         <button type="submit" className="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600">
-          Υποβολή
+          Αποστολή
         </button>
       </form>
+      <ToastContainer />
     </div>
   );
 };
