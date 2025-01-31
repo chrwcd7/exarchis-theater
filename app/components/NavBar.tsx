@@ -68,13 +68,13 @@ export default function NavBar() {
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <Link href="/news" legacyBehavior passHref>
+            <Link href="/theater-lab" legacyBehavior passHref>
               <NavigationMenuLink
                 className={navigationMenuTriggerStyle()}
-                aria-label="News"
-                data-active={isActive('/news') ? true : undefined}
+                aria-label="Theater lab"
+                data-active={isActive('/theater-lab') ? true : undefined}
               >
-                Νεα
+                Εργαστηρι Θεατρου
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
@@ -86,6 +86,17 @@ export default function NavBar() {
                 data-active={isActive('/archive') ? true : undefined}
               >
                 Αρχειο
+              </NavigationMenuLink>
+            </Link>
+          </NavigationMenuItem>
+          <NavigationMenuItem>
+            <Link href="/news" legacyBehavior passHref>
+              <NavigationMenuLink
+                className={navigationMenuTriggerStyle()}
+                aria-label="News"
+                data-active={isActive('/news') ? true : undefined}
+              >
+                Νεα
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
