@@ -21,7 +21,7 @@ const ArchiveContent = ({ toggleSidebar }: { toggleSidebar: () => void }) => {
         </h2>
         <div className="flex flex-col gap-8">
           {filteredPlays.map((play, index) => (
-            <div key={index} className="bg-card shadow-md rounded-lg px-4 pb-4 pt-8 flex flex-col break-words relative">
+            <div key={index} className="bg-card shadow-md rounded-lg p-8 flex flex-col break-words relative">
               {play.tag && (
                 <span className="bg-blue-500 text-white text-xs font-semibold px-2 py-1 rounded absolute top-2 right-2">
                   {play.tag}
