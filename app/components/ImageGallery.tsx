@@ -79,6 +79,7 @@ export default function ImageGallery({ images = [] }: { images: string[] }) {
               height="300"
               className="max-h-60 self-center object-cover aspect-auto cursor-pointer transition-transform transform hover:scale-105"
               priority={pathname === '/archive'}
+              sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 15vw"
               onClick={() => openSlider(index)}
             />
           </div>
