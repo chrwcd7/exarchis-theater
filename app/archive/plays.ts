@@ -20,7 +20,7 @@ export const plays = [
   },
   {
     year: 2020,
-    title: 'Η Κυρία με το σκυλάκι',
+    title: 'Η κυρία με το σκυλάκι',
     screenwriter: 'του Άντον Τσέχοφ',
     images: [
       '/archive/Η Κυρία με το σκυλάκι 1.png',
@@ -37,7 +37,7 @@ export const plays = [
   },
   {
     year: 2016,
-    title: 'Τα Παντρολογήματα',
+    title: 'Τα παντρολογήματα',
     screenwriter: 'του Νικολάι Γκόγκολ',
     images: ['/archive/Παντρολογήματα 1.png', '/archive/Παντρολογήματα 2.jpg'],
   },
@@ -72,19 +72,19 @@ export const plays = [
   },
   {
     year: 2014,
-    title: 'Το Κοντραμπάσο',
+    title: 'Το κοντραμπάσο',
     screenwriter: 'του Πάτρικ Ζίσκιντ',
     images: ['/archive/Το Κοντραμπάσο.avif'],
   },
   {
     year: 2013,
-    title: 'Οι Καρέκλες',
+    title: 'Οι καρέκλες',
     screenwriter: 'του Ευγένιου Ιονέσκο',
     images: ['/archive/καρέκλες 1.jpg', '/archive/καρέκλες 2.jpg', '/archive/καρέκλες 3.jpg', '/archive/καρέκλες 4.jpg'],
   },
   {
     year: 2012,
-    title: 'Είμαι Χάλια',
+    title: 'Είμαι χάλια',
     screenwriter: 'του Ντίνου Σπυρόπουλου',
     images: ['/archive/Είμαι χάλια.png'],
   },
@@ -96,7 +96,7 @@ export const plays = [
   },
   {
     year: 2009,
-    title: 'Η Φαλακρή Τραγουδίστρια',
+    title: 'Η φαλακρή τραγουδίστρια',
     screenwriter: 'του Ευγένιου Ιονέσκο',
     images: [
       '/archive/Η φαλακρή τραγουδίστρια 1.jpg',
@@ -106,7 +106,7 @@ export const plays = [
   },
   {
     year: 2008,
-    title: 'Γκόλφω Forever',
+    title: 'Γκόλφω forever',
     screenwriter: 'του Ντίνου Σπυρόπουλου',
     images: ['/archive/Γκόλφω Forever.jpg'],
   },
@@ -124,8 +124,14 @@ export const plays = [
   },
   {
     year: 2006,
-    title: 'Λυσιστράτη Live',
+    title: 'Λυσιστράτη live',
     screenwriter: 'παρωδία του Ντίνου Σπυρόπουλου',
     images: [],
+  },
+  {
+    year: 2018,
+    title: 'Το άνθος του γιαλού',
+    screenwriter: 'του Αλέξανδρου Παπαδιαμάντη',
+    images: ['/archive/Το Άνθος του γιαλού 1.jpeg', '/archive/Το Άνθος του γιαλού 2.jpeg'],
   },
 ];
