@@ -29,7 +29,7 @@ export default function DarkModeToggle() {
   return (
     <button
       onClick={toggleDarkMode}
-      className="text-yellow-500 p-2 self-center rounded lg:hover:bg-accent focus:effect-outline-none"
+      className="text-yellow-500 p-1 ml-2 self-auto rounded focus:effect-outline-none lg:self-start"
     >
       <FontAwesomeIcon icon={darkMode ? faSun : faMoon} className="w-5 h-5" />
     </button>
