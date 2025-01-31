@@ -9,7 +9,13 @@ export default function ImageGallery() {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {images.map((src, index) => (
           <div key={index} className="relative w-full h-64">
-            <Image src={src} alt={`Exarchis image ${index + 1}`} layout="fill" objectFit="cover" />
+            <Image
+              src={src}
+              alt={`Exarchis image ${index + 1}`}
+              width="300"
+              height="300"
+              className="object-cover aspect-auto"
+            />
           </div>
         ))}
       </div>
