@@ -35,7 +35,7 @@ export default function NavBar() {
   }, [pathname]);
 
   return (
-    <div className={`bg-black w-full flex flex-col justify-center items-center py-4 sm:flex-row`}>
+    <div className={`bg-black w-full flex flex-col justify-center items-center p-4 sm:flex-row`}>
       <div className="flex flex-row gap-4">
         <Link href={'/'}>
           <Image src={logo} alt="logo" width={100} height={100} className="mb-6 sm:mb-0" />
