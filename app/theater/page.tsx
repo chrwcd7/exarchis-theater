@@ -11,7 +11,10 @@ export default function Theater() {
           κοινό μας.
         </p>
       </section>
-      <ImageGallery />
+      <div className="flex flex-col items-center">
+        <h2 className="text-2xl font-semibold mb-4">Φωτογραφίες του θεάτρου</h2>
+        <ImageGallery />
+      </div>
     </>
   );
 }
