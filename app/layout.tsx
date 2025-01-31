@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
+import NavBar from './components/NavBar';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -23,11 +24,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <h1 className="flex flex-row justify-center text-4xl text-white bg-gray-600 py-4">Θέατρο Εξαρχής</h1>
-
-        {children}
+    <html lang="en" className="h-full">
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}>
+        <header>
+          <div className="container mx-auto flex flex-col">
+            <NavBar />
+          </div>
+        </header>
+        <main className="container mx-auto flex-grow py-8">{children}</main>
+        <footer className="bg-gray-800 text-white py-4">
+          <div className="container mx-auto text-center">
+            <p>&copy; 2025 Θέατρο Εξαρχής. All rights reserved.</p>
+          </div>
+        </footer>
       </body>
     </html>
   );
