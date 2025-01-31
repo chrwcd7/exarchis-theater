@@ -68,7 +68,7 @@ export default async function TheaterLab() {
         <h2 className="text-2xl font-semibold mb-4">Επικοινωνία</h2>
         <p className="mb-4">
           Για περισσότερες πληροφορίες, καλέστε στο{' '}
-          <a href="tel:+306977023168" className="text-teal-500 hover:underline">
+          <a href="tel:+306977023168">
             (+30) 697 702 3168
           </a>
           .
