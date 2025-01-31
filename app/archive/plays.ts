@@ -13,7 +13,7 @@ export const plays = [
     year: 2020,
     title: 'Η Χιονάτη',
     screenwriter: 'των αδελφών Γκριμ',
-    tag: 'Θέατρο και παιδιά',
+    tag: 'Θέατρο για παιδιά',
   },
   {
     year: 2020,
@@ -24,7 +24,7 @@ export const plays = [
     year: 2020,
     title: 'Η Κοκκινοσκουφίτσα',
     screenwriter: 'του Σάρλ Περώ',
-    tag: 'Θέατρο και παιδιά',
+    tag: 'Θέατρο για παιδιά',
   },
   {
     year: 2018,
@@ -35,7 +35,7 @@ export const plays = [
     year: 2018,
     title: 'Ο Κοντορεβιθούλης',
     screenwriter: 'του Σάρλ Περώ',
-    tag: 'Θέατρο και παιδιά',
+    tag: 'Θέατρο για παιδιά',
   },
   {
     year: 2016,
