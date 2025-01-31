@@ -48,7 +48,7 @@ export default function AboutUs() {
           alt="Ντίνος Σπυρόπουλος"
           width={200}
           height={200}
-          className="rounded-full object-cover"
+          className="mb-4 rounded-full object-cover"
         />
         <p className="text-lg leading-relaxed">
           Ο Ντίνος Σπυρόπουλος είναι ένας εξαιρετικά ταλαντούχος ηθοποιός και σκηνοθέτης με πολυετή εμπειρία στο θέατρο. Με
