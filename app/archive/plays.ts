@@ -92,7 +92,7 @@ export const plays = [
     year: 2011,
     title: 'Το δωμάτιο της Βερόνικα',
     screenwriter: 'του Άιρα Λέβιν',
-    images: ['/archive/Το δωμάτιο της Βερόνικα.webp'],
+    images: ['/archive/Το δωμάτιο της Βερόνικα.webp', '/archive/Το δωμάτιο της Βερόνικα 2.jpeg'],
   },
   {
     year: 2009,
