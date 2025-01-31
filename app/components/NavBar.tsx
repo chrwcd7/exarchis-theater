@@ -38,7 +38,7 @@ export default function NavBar() {
     <div className={`bg-black w-full flex flex-col justify-center items-center p-4 sm:flex-row`}>
       <div className="flex flex-row gap-4">
         <Link href={'/'}>
-          <Image src={logo} alt="logo" width={100} height={100} className="mb-6 sm:mb-0" />
+          <Image src={logo} alt="Exarchis logo" className="w-24 h-24 mb-6 sm:mb-0" priority />
         </Link>
         <button className="sm:hidden text-white" onClick={toggleMenu} aria-label="Toggle navigation menu">
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
