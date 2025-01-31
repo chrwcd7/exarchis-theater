@@ -40,7 +40,7 @@ export default function NavBar() {
     <div className={`bg-black w-full flex flex-col justify-center items-center p-4 sm:flex-row`}>
       <div className="flex flex-row gap-4">
         <Link href={'/'}>
-          <Image src={logo} alt="Exarchis logo" className="w-24 h-24 mb-6 sm:mb-0" priority />
+          <Image src={logo} alt="Exarchis logo" className="w-24 h-24" priority />
         </Link>
         <button
           className={`sm:hidden text-white transition-transform duration-300 ${isMenuOpen ? 'rotate-90' : ''}`}
@@ -50,7 +50,11 @@ export default function NavBar() {
           <FontAwesomeIcon icon={faBars} className="w-6 h-6" />
         </button>
       </div>
-      <NavigationMenu className={`${isMenuOpen ? 'block' : 'hidden'} sm:block`}>
+      <NavigationMenu
+        className={`${
+          isMenuOpen ? 'max-h-screen opacity-100 mt-6' : 'max-h-0 opacity-0 mt-0'
+        } overflow-hidden transition-all duration-300 ease-in-out sm:mt-0 sm:max-h-full sm:opacity-100 sm:overflow-visible`}
+      >
         <NavigationMenuList className="flex flex-col items-start sm:flex-row sm:ml-4">
           <NavigationMenuItem>
             <Link href="/theater" legacyBehavior passHref>
