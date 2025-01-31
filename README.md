@@ -1,36 +1,13 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Θέατρο Εξ Αρχής
 
-## Getting Started
+Καλώς ορίσατε στην επίσημη ιστοσελίδα του θεάτρου Εξ Αρχής, ενός δυναμικού χώρου τέχνης στην καρδιά της Αθήνας.
 
-First, run the development server:
+## Σχετικά με το θέατρο
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Η [σελίδα](https://theatroexarchis.gr) παρέχει πληροφορίες για νέες και προηγούμενες παραστάσεις, μαθήματα θεάτρου και ό,τι άλλο αφορά την εμπειρία της υποκριτικής τέχνης. Το θέατρο ιδρύθηκε το 2004 από την ομάδα "Θεατρικοί Ορίζοντες" στα Εξάρχεια, όπου βρίσκεται μέχρι σήμερα. Στο χώρο στεγάζονται θέατρο και εργαστήρι θεάτρου και φιλοξενούνται πολιτιστικές εκδηλώσεις θεατρικού, μουσικού αλλά και εικαστικού ενδιαφέροντος.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Μείνετε Συνδεδεμένοι
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Ακολουθήστε μας στο [Facebook](https://www.facebook.com/ExArchesTheatro) και στο [Instagram](https://www.instagram.com/exarchis.theatre/) για να λαμβάνετε τις τελευταίες ενημερώσεις σχετικά με τις επερχόμενες παραστάσεις, εκδηλώσεις, αλλά και παρασκηνιακές ματιές στις παραγωγές μας. Γίνετε μέλος της ομάδας μας και των όσων συμβαίνουν εντός και εκτός σκηνής.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Σας ευχαριστούμε που υποστηρίζετε το Θέατρο Εξ Αρχής. Ανυπομονούμε να σας δούμε από κοντά!
