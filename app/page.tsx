@@ -25,23 +25,20 @@ export default function Home() {
       <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-4">Η Ομάδα μας</h2>
         <p>
-          Η Αστική μη κερδοσκοπική εταιρεία{' '}
-          <Link href="/about-us" className="text-blue-700">
-            «Θεατρικοί Ορίζοντες»
-          </Link>{' '}
-          και η ομάδα του θεάτρου Εξ Αρχής, στοχεύουν από το 1991 στο άρτιο καλλιτεχνικό και αισθητικό αποτέλεσμα. Εντός και
-          εκτός Αθηνών στόχος μας είναι πάντα η τέχνη και όπως θα έλεγε ο Κάρολος Κουν το να «Κάνουμε Θέατρο για την ψυχή μας»
+          Η Αστική μη κερδοσκοπική εταιρεία <Link href="/about-us">«Θεατρικοί Ορίζοντες»</Link> και η ομάδα του θεάτρου Εξ
+          Αρχής, στοχεύουν από το 1991 στο άρτιο καλλιτεχνικό και αισθητικό αποτέλεσμα. Εντός και εκτός Αθηνών στόχος μας είναι
+          πάντα η τέχνη και όπως θα έλεγε ο Κάρολος Κουν το να «Κάνουμε Θέατρο για την ψυχή μας»
         </p>
       </section>
       <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-4">Μείνετε Συνδεδεμένοι</h2>
         <p>
           Ακολουθήστε μας στο{' '}
-          <a href="https://www.facebook.com/ExArchesTheatro" target="_blank" className="text-blue-700">
+          <a href="https://www.facebook.com/ExArchesTheatro" target="_blank">
             Facebook
           </a>{' '}
           και το{' '}
-          <a href="https://www.instagram.com/exarchis.theatre/" target="_blank" className="text-blue-700">
+          <a href="https://www.instagram.com/exarchis.theatre/" target="_blank">
             Instagram
           </a>{' '}
           για να λαμβάνετε τις τελευταίες ενημερώσεις σχετικά με τις επερχόμενες παραστάσεις, εκδηλώσεις, αλλά και παρασκηνιακές
