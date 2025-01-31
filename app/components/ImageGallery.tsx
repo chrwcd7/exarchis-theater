@@ -1,14 +1,51 @@
+'use client';
+
+import React, { useState } from 'react';
 import Image from 'next/image';
+import { useSwipeable } from 'react-swipeable';
 
 export default function ImageGallery() {
   const images = ['/exarchis1.jpg', '/exarchis2.jpg', '/exarchis3.jpg', '/exarchis4.jpg'];
+
+  const [isOpen, setIsOpen] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const openSlider = (index: number) => {
+    setCurrentImageIndex(index);
+    setIsOpen(true);
+  };
+
+  const closeSlider = () => {
+    setIsOpen(false);
+  };
+
+  const nextImage = () => {
+    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+  };
+
+  const prevImage = () => {
+    setCurrentImageIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+  };
+
+  const handleOverlayClick = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (e.target === e.currentTarget) {
+      closeSlider();
+    }
+  };
+
+  const swipeHandlers = useSwipeable({
+    onSwipedLeft: nextImage,
+    onSwipedRight: prevImage,
+    preventDefaultTouchmoveEvent: true,
+    trackMouse: true,
+  });
 
   return (
     <div className="flex flex-col items-center">
       <h2 className="text-2xl font-semibold mb-4">Φωτογραφίες του θεάτρου</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {images.map((src, index) => (
-          <div key={index}>
+          <div key={index} onClick={() => openSlider(index)}>
             <Image
               src={src}
               alt={`Exarchis image ${index + 1}`}
@@ -19,6 +56,33 @@ export default function ImageGallery() {
           </div>
         ))}
       </div>
+      {isOpen && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50"
+          onClick={handleOverlayClick}
+          {...swipeHandlers}
+        >
+          <button onClick={closeSlider} className="absolute top-4 right-4 text-white text-6xl z-50">
+            &times;
+          </button>
+          <div className="relative w-full h-full max-w-4xl max-h-4xl flex items-center justify-center">
+            <button onClick={prevImage} className="absolute left-0 text-white text-4xl p-4 z-50 sm:text-6xl">
+              &lt;
+            </button>
+            <div className="relative w-full h-full">
+              <Image
+                src={images[currentImageIndex]}
+                alt={`Exarchis image ${currentImageIndex + 1}`}
+                fill
+                className="object-contain"
+              />
+            </div>
+            <button onClick={nextImage} className="absolute right-0 text-white text-4xl p-4 z-50 sm:text-6xl">
+              &gt;
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
