@@ -1,10 +1,16 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
   return (
     <>
       <section className="text-center mb-8">
         <h1 className="text-4xl font-bold mb-4">Θέατρο Εξ Αρχής</h1>
+      </section>
+      <section className="text-center mb-8">
+        <div className="inline-block">
+          <Image src="/exarchis_cover.jpg" alt="Exarchis cover image" width="430" height="360" />
+        </div>
       </section>
       <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-4">Η Αποστολή μας</h2>
