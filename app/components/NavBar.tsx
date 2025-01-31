@@ -16,7 +16,9 @@ import logo from '../../public/exarchis_logo.jpg';
 export default function NavBar() {
   return (
     <div className="bg-black w-full flex flex-col justify-center items-center py-4 sm:flex-row">
-      <Image src={logo} alt="logo" width={100} height={100} className="mb-6 sm:mr-12 sm:mb-0" />
+      <Link href={'/'}>
+        <Image src={logo} alt="logo" width={100} height={100} className="mb-6 sm:mr-12 sm:mb-0" />
+      </Link>
       <NavigationMenu>
         <NavigationMenuList className="flex flex-col items-start sm:flex-row">
           <NavigationMenuItem>
