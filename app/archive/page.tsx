@@ -29,10 +29,8 @@ const ArchiveContent = ({ toggleSidebar }: { toggleSidebar: () => void }) => {
               )}
               <h3 className="text-xl font-bold">{play.title}</h3>
               <p className="text-gray-700 mb-4">{play.screenwriter}</p>
-              {/* // TODO: Pass images to ImageGallery component as prop */}
-              {/* <ImageGallery images={play.images} /> */}
               <div className="flex flex-col items-center lg:items-start">
-                <ImageGallery />
+                <ImageGallery images={play.images} />
               </div>
             </div>
           ))}

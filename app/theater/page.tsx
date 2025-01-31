@@ -1,6 +1,8 @@
 import ImageGallery from '../components/ImageGallery';
 
 export default function Theater() {
+  const images = ['/exarchis1.jpg', '/exarchis2.jpg', '/exarchis3.jpg', '/exarchis4.jpg'];
+
   return (
     <>
       <section className="text-center mb-8">
@@ -13,7 +15,7 @@ export default function Theater() {
       </section>
       <div className="flex flex-col items-center">
         <h2 className="text-2xl font-semibold mb-4">Φωτογραφίες του θεάτρου</h2>
-        <ImageGallery />
+        <ImageGallery images={images} />
       </div>
     </>
   );

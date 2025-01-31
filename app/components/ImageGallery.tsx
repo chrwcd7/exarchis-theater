@@ -4,8 +4,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import Image from 'next/image';
 import { useSwipeable } from 'react-swipeable';
 
-export default function ImageGallery() {
-  const images = ['/exarchis1.jpg', '/exarchis2.jpg', '/exarchis3.jpg', '/exarchis4.jpg'];
+export default function ImageGallery({ images = [] }: { images: string[] }) {
   const [isOpen, setIsOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -26,16 +25,18 @@ export default function ImageGallery() {
     setCurrentImageIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
   }, [images.length]);
 
-  const handleOverlayClick = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
-    if (e.target === e.currentTarget) {
-      closeSlider();
-    }
-  }, [closeSlider]);
+  const handleOverlayClick = useCallback(
+    (e: React.MouseEvent<HTMLDivElement>) => {
+      if (e.target === e.currentTarget) {
+        closeSlider();
+      }
+    },
+    [closeSlider]
+  );
 
   const swipeHandlers = useSwipeable({
     onSwipedLeft: nextImage,
     onSwipedRight: prevImage,
-    preventDefaultTouchmoveEvent: true,
     trackMouse: true,
   });
 
@@ -65,13 +66,13 @@ export default function ImageGallery() {
     <>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {images.map((src, index) => (
-          <div key={index} onClick={() => openSlider(index)}>
+          <div key={index} onClick={() => openSlider(index)} className="flex">
             <Image
               src={src}
               alt={`Exarchis image ${index + 1}`}
               width="300"
               height="300"
-              className="object-cover aspect-auto cursor-pointer transition-transform transform hover:scale-105"
+              className="self-center object-cover aspect-auto cursor-pointer transition-transform transform hover:scale-105"
             />
           </div>
         ))}
