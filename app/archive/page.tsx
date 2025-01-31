@@ -72,9 +72,9 @@ const Archive = () => {
           onClick={closeSidebar}
         ></div>
         <div
-          className={`fixed inset-y-0 left-0 z-50 w-64 bg-background rounded shadow-lg transform ${
+          className={`fixed inset-y-0 left-0 z-50 w-64 max-h-full bg-background rounded shadow-lg transform ${
             isSidebarOpen ? 'translate-x-0' : '-translate-x-full'
-          } transition-transform lg:relative lg:translate-x-0`}
+          } transition-transform lg:translate-x-0 lg:sticky lg:max-h-fit`}
         >
           <Sidebar closeSidebar={closeSidebar} />
         </div>
