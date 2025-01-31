@@ -16,7 +16,7 @@ const ArchiveContent = ({ toggleSidebar }: { toggleSidebar: () => void }) => {
     <div className="px-8 text-center lg:text-left">
       <h1 className="text-3xl font-bold mb-4">Αρχείο</h1>
       <div className="flex flex-col items-center lg:items-start">
-        <h2 className="text-2xl font-semibold mb-4 " onClick={toggleSidebar}>
+        <h2 className="text-2xl font-semibold mb-4" onClick={toggleSidebar}>
           Έτος <span className="text-teal-500 lg:text-black">{selectedYear}</span>
         </h2>
         <div className="flex flex-col gap-8">
