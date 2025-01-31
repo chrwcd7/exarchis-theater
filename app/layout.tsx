@@ -24,7 +24,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>{children}</body>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <h1 className="flex flex-row justify-center text-4xl text-white bg-gray-600 py-4">Θέατρο Εξαρχής</h1>
+
+        {children}
+      </body>
     </html>
   );
 }
