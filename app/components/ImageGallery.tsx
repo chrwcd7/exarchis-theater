@@ -4,6 +4,8 @@ import React, { useState, useEffect, useCallback } from 'react';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useSwipeable } from 'react-swipeable';
+import { faAngleLeft, faAngleRight, faXmark } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function ImageGallery({ images = [] }: { images: string[] }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -87,12 +89,12 @@ export default function ImageGallery({ images = [] }: { images: string[] }) {
           onClick={handleOverlayClick}
           {...swipeHandlers}
         >
-          <button onClick={closeSlider} className="absolute top-4 right-4 text-white text-6xl z-50">
-            &times;
+          <button onClick={closeSlider} className="absolute top-4 right-4 text-white z-50">
+            <FontAwesomeIcon icon={faXmark} className="w-6 h-6 lg:w-12 lg:h-12" />
           </button>
           <div className="relative w-full h-full max-w-4xl max-h-4xl flex items-center justify-center">
-            <button onClick={prevImage} className="absolute left-0 text-white text-4xl p-4 z-50 sm:text-6xl">
-              &lt;
+            <button onClick={prevImage} className="absolute left-0 text-white p-4 z-50 sm:text-6xl">
+              <FontAwesomeIcon icon={faAngleLeft} className="w-6 h-6 lg:w-12 lg:h-12" />
             </button>
             <div className="relative w-full h-full">
               <Image
@@ -102,8 +104,8 @@ export default function ImageGallery({ images = [] }: { images: string[] }) {
                 className="object-contain"
               />
             </div>
-            <button onClick={nextImage} className="absolute right-0 text-white text-4xl p-4 z-50 sm:text-6xl">
-              &gt;
+            <button onClick={nextImage} className="absolute right-0 text-white p-4 z-50 sm:text-6xl">
+              <FontAwesomeIcon icon={faAngleRight} className="w-6 h-6 lg:w-12 lg:h-12" />
             </button>
           </div>
         </div>

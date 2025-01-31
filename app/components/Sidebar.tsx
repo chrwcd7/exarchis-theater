@@ -1,6 +1,9 @@
 'use client';
 
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faXmark } from '@fortawesome/free-solid-svg-icons';
+
 import { useYear } from '../context/YearContext';
 import { plays } from '../archive/plays';
 
@@ -18,11 +21,11 @@ const Sidebar = ({ closeSidebar }: { closeSidebar: () => void }) => {
   return (
     <div className="relative px-0 pt-4 lg:w-64 lg:px-4">
       <button
-        className="absolute top-2 right-2 text-4xl text-primary lg:hidden"
+        className="absolute top-4 right-2 lg:hidden"
         onClick={closeSidebar}
         aria-label="Close sidebar"
       >
-        &times;
+        <FontAwesomeIcon icon={faXmark} className="w-6 h-6" />
       </button>
       <h2 className="text-xl text-primary font-bold mb-4 text-center">Έτος</h2>
       <ul className="flex flex-col items-center">
