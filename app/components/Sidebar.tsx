@@ -3,11 +3,13 @@
 import React from 'react';
 
 import { useYear } from '../context/YearContext';
+import { plays } from '../archive/plays';
 
 const Sidebar = () => {
   const { selectedYear, setSelectedYear } = useYear();
-  const currentYear = new Date().getFullYear();
-  const years = Array.from({ length: 15 }, (_, i) => currentYear - i);
+
+  // Extract years from plays and create a sorted set of unique years
+  const years = Array.from(new Set(plays.map((play) => play.year))).sort((a, b) => b - a);
 
   return (
     <div className="w-32 px-0 sm:w-64 sm:px-4">
