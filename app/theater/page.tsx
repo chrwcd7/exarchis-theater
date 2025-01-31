@@ -1,7 +1,12 @@
+import { promises as fs } from 'fs';
+import path from 'path';
+
 import ImageGallery from '../components/ImageGallery';
 
-export default function Theater() {
-  const images = ['/exarchis1.jpg', '/exarchis2.jpg', '/exarchis3.jpg', '/exarchis4.jpeg'];
+export default async function Theater() {
+  // Retrieve all image filenames from the theater directory
+  const imageDirectory = path.join(process.cwd(), '/public/theater');
+  const imageFilenames = (await fs.readdir(imageDirectory)).map((filename) => `/theater/${filename}`);
 
   return (
     <>
@@ -18,7 +23,7 @@ export default function Theater() {
       </section>
       <div className="flex flex-col items-center">
         <h2 className="text-2xl font-semibold mb-4 text-center">Φωτογραφίες του θεάτρου</h2>
-        <ImageGallery images={images} />
+        <ImageGallery images={imageFilenames} />
       </div>
     </>
   );
