@@ -31,7 +31,7 @@ export default function RootLayout({
             <NavBar />
           </div>
         </header>
-        <main className="container mx-auto flex-grow py-8">{children}</main>
+        <main className="container mx-auto flex-grow">{children}</main>
         <footer className="bg-gray-800 text-white py-4">
           <div className="container mx-auto text-center">
             <p>&copy; 2025 Θέατρο Εξαρχής. All rights reserved.</p>
