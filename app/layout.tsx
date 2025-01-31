@@ -31,7 +31,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen bg-gray-100`}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen bg-gray-100 dark:bg-gray-900`}
+      >
         <header>
           <div className="container mx-auto flex flex-col">
             <NavBar />
@@ -62,7 +64,7 @@ export default function RootLayout({
                 </a>
               </p>
             </div>
-            <p>&copy; 2025 Θέατρο Εξαρχής. All rights reserved.</p>
+            <p>&copy; 2025 Θέατρο Εξ Αρχής. All rights reserved.</p>
           </div>
         </footer>
       </body>
