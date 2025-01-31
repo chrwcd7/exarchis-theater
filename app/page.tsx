@@ -1,5 +1,7 @@
 import Image from 'next/image';
 
+import exarchisCoverImg from '../public/exarchis_cover.jpeg';
+
 export default function Home() {
   return (
     <>
@@ -8,13 +10,7 @@ export default function Home() {
       </section>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         <div className="flex items-center justify-center">
-          <Image
-            src="/exarchis_cover.jpeg"
-            alt="Exarchis cover image"
-            width={355}
-            height={309}
-            className="object-cover w-full h-auto"
-          />
+          <Image src={exarchisCoverImg} alt="Exarchis cover image" className="object-cover w-full h-auto" priority />
         </div>
         <div>
           <section className="mb-8">
