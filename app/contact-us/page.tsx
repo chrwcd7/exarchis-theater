@@ -33,7 +33,8 @@ const ContactUs = () => {
         toast.error('Αποτυχία αποστολής μηνύματος.');
       }
     } catch (error) {
-      toast.error('Αποτυχία αποστολής μηνύματος.');
+      toast.error('Αποτυχία αποστολής μηνύματος');
+      console.error(error);
     }
   };
 

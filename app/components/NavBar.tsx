@@ -25,10 +25,12 @@ export default function NavBar() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  // Close the navbar when the route changes
   useEffect(() => {
     if (isMenuOpen) {
       setIsMenuOpen(false);
     }
+    //eslint-disable-next-line
   }, [pathname]);
 
   return (

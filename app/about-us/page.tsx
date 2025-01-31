@@ -1,7 +1,6 @@
 import Image from 'next/image';
 
 import eleniTsakalouImg from '../../public/eleni-tsakalou.jpeg';
-import dinosSpyropoulosImg from '../../public/dinos-spyropoulos.jpg';
 
 export default function AboutUs() {
   return (

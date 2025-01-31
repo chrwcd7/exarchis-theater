@@ -1,37 +1,36 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import Image from 'next/image';
 import { useSwipeable } from 'react-swipeable';
 
 export default function ImageGallery() {
   const images = ['/exarchis1.jpg', '/exarchis2.jpg', '/exarchis3.jpg', '/exarchis4.jpg'];
-
   const [isOpen, setIsOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  const openSlider = (index: number) => {
+  const openSlider = useCallback((index: number) => {
     setCurrentImageIndex(index);
     setIsOpen(true);
-  };
+  }, []);
 
-  const closeSlider = () => {
+  const closeSlider = useCallback(() => {
     setIsOpen(false);
-  };
+  }, []);
 
-  const nextImage = () => {
+  const nextImage = useCallback(() => {
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-  };
+  }, [images.length]);
 
-  const prevImage = () => {
+  const prevImage = useCallback(() => {
     setCurrentImageIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
-  };
+  }, [images.length]);
 
-  const handleOverlayClick = (e: React.MouseEvent<HTMLDivElement>) => {
+  const handleOverlayClick = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
     if (e.target === e.currentTarget) {
       closeSlider();
     }
-  };
+  }, [closeSlider]);
 
   const swipeHandlers = useSwipeable({
     onSwipedLeft: nextImage,
