@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import NavBar from './components/NavBar';
+import CookieConsentBanner from './components/CookieConsentBanner';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -67,6 +68,7 @@ export default function RootLayout({
             <p>&copy; 2025 Θέατρο Εξ Αρχής. All rights reserved.</p>
           </div>
         </footer>
+        <CookieConsentBanner />
       </body>
     </html>
   );
