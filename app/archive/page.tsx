@@ -17,18 +17,18 @@ const ArchiveContent = ({ toggleSidebar }: { toggleSidebar: () => void }) => {
       <h1 className="text-3xl font-bold mb-4">Αρχείο</h1>
       <div className="flex flex-col items-center lg:items-start">
         <h2 className="text-2xl font-semibold mb-4" onClick={toggleSidebar}>
-          Έτος <span className="text-teal-700 lg:text-black">{selectedYear}</span>
+          Έτος <span className="text-teal-700 dark:text-teal-500 lg:text-primary dark:lg:text-primary">{selectedYear}</span>
         </h2>
         <div className="flex flex-col gap-8">
           {filteredPlays.map((play, index) => (
-            <div key={index} className="bg-white shadow-md rounded-lg px-4 pb-4 pt-8 flex flex-col break-words relative">
+            <div key={index} className="bg-card shadow-md rounded-lg px-4 pb-4 pt-8 flex flex-col break-words relative">
               {play.tag && (
                 <span className="bg-blue-500 text-white text-xs font-semibold px-2 py-1 rounded absolute top-2 right-2">
                   {play.tag}
                 </span>
               )}
-              <h3 className="text-xl font-bold">{play.title}</h3>
-              <p className="text-gray-700 mb-4">{play.screenwriter}</p>
+              <h3 className="text-xl text-primary font-bold">{play.title}</h3>
+              <p className="text-primary mb-4">{play.screenwriter}</p>
               <div className="flex flex-col items-center lg:items-start">
                 <ImageGallery images={play.images} />
               </div>
@@ -76,7 +76,7 @@ const Archive = () => {
           onClick={closeSidebar}
         ></div>
         <div
-          className={`fixed inset-y-0 left-0 z-50 w-64 bg-white shadow-lg transform ${
+          className={`fixed inset-y-0 left-0 z-50 w-64 bg-background rounded shadow-lg transform ${
             isSidebarOpen ? 'translate-x-0' : '-translate-x-full'
           } transition-transform lg:relative lg:translate-x-0`}
         >

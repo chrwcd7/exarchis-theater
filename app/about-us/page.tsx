@@ -6,7 +6,7 @@ import dinosSpyropoulosImg from '../../public/dinos-spyropoulos.jpg';
 export default function AboutUs() {
   return (
     <>
-      <section className="mb-8 bg-white p-6 rounded-lg shadow-md">
+      <section className="mb-8 bg-card p-6 rounded-lg shadow-md">
         <h1 className="text-3xl font-bold mb-4 text-center sm:text-left">Οι Θεατρικοί Ορίζοντες</h1>
         <p className="text-lg leading-relaxed">
           Οι Θεατρικοί Ορίζοντες παρουσιάζουν κλασικά θεατρικά έργα του παγκόσμιου ρεπερτορίου, όμως ταυτόχρονα αναδεικνύουν και
@@ -25,7 +25,7 @@ export default function AboutUs() {
           Ντίνου Σπυρόπουλου.
         </p>
       </section>
-      <section className="mb-8 bg-white p-6 rounded-lg shadow-md flex flex-col items-center sm:items-start">
+      <section className="mb-8 bg-card p-6 rounded-lg shadow-md flex flex-col items-center sm:items-start">
         <h1 className="text-4xl font-bold mb-4 text-center">Ελένη Τσακάλου</h1>
         <Image
           src={eleniTsakalouImg}
@@ -44,7 +44,7 @@ export default function AboutUs() {
           Τηλεοπτικά, μία από τις τελευταίες δουλειές της ήταν το “Milky Way” του σκηνοθέτη Βασίλη Κεκάτου.
         </p>
       </section>
-      <section className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center sm:items-start">
+      <section className="bg-card p-6 rounded-lg shadow-md flex flex-col items-center sm:items-start">
         <h1 className="text-4xl font-bold mb-4 text-center">Ντίνος Σπυρόπουλος</h1>
         <Image
           src={dinosSpyropoulosImg}

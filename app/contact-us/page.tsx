@@ -40,11 +40,11 @@ const ContactUs = () => {
 
   return (
     <div className="flex justify-center items-center">
-      <form className="bg-white p-8 rounded-lg shadow-md w-full max-w-md" onSubmit={handleSubmit}>
-        <h2 className="text-2xl font-bold mb-6 text-gray-800">Επικοινωνήστε μαζί μας</h2>
+      <form className="bg-background p-8 rounded-lg shadow-md w-full max-w-md" onSubmit={handleSubmit}>
+        <h2 className="text-2xl text-primary font-bold mb-6 text-gray-800">Επικοινωνήστε μαζί μας</h2>
         <div className="mb-4">
-          <label htmlFor="name" className="block text-gray-700 font-bold mb-2">
-            Όνομα:
+          <label htmlFor="name" className="block text-primary font-bold mb-2">
+            Όνομα
           </label>
           <input
             id="name"
@@ -56,8 +56,8 @@ const ContactUs = () => {
           />
         </div>
         <div className="mb-4">
-          <label htmlFor="email" className="block text-gray-700 font-bold mb-2">
-            Email:
+          <label htmlFor="email" className="block text-primary font-bold mb-2">
+            Email
           </label>
           <input
             id="email"
@@ -69,8 +69,8 @@ const ContactUs = () => {
           />
         </div>
         <div className="mb-4">
-          <label htmlFor="message" className="block text-gray-700 font-bold mb-2">
-            Μήνυμα:
+          <label htmlFor="message" className="block text-primary font-bold mb-2">
+            Μήνυμα
           </label>
           <textarea
             id="message"

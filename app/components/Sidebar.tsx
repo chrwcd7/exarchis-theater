@@ -18,19 +18,19 @@ const Sidebar = ({ closeSidebar }: { closeSidebar: () => void }) => {
   return (
     <div className="relative px-0 pt-4 lg:w-64 lg:px-4">
       <button
-        className="absolute top-2 right-2 text-4xl text-black lg:hidden"
+        className="absolute top-2 right-2 text-4xl text-primary lg:hidden"
         onClick={closeSidebar}
         aria-label="Close sidebar"
       >
         &times;
       </button>
-      <h2 className="text-xl font-bold mb-4 text-center">Έτος</h2>
+      <h2 className="text-xl text-primary font-bold mb-4 text-center">Έτος</h2>
       <ul className="flex flex-col items-center">
         {years.map((year) => (
           <li key={year} className="mb-2">
             <button
               onClick={() => handleYearClick(year)}
-              className={`text-teal-700 hover:underline ${
+              className={`text-teal-700 dark:text-teal-500 hover:underline ${
                 selectedYear === year ? 'bg-teal-700 !text-white font-bold' : ''
               } px-4 py-2 rounded`}
             >
