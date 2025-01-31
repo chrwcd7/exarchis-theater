@@ -77,6 +77,7 @@ const ContactUs = () => {
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             className="w-full px-3 py-2 border rounded-lg text-black"
+            rows={4}
             required
           />
         </div>
