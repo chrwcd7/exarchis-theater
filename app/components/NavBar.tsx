@@ -40,17 +40,6 @@ export default function NavBar() {
       <NavigationMenu className={`${isMenuOpen ? 'block' : 'hidden'} sm:block`}>
         <NavigationMenuList className="flex flex-col items-start sm:flex-row sm:ml-12">
           <NavigationMenuItem>
-            <Link href="/about-us" legacyBehavior passHref>
-              <NavigationMenuLink
-                className={navigationMenuTriggerStyle()}
-                aria-label="About Us"
-                data-active={isActive('/about-us') ? true : undefined}
-              >
-                Ποιοι ειμαστε
-              </NavigationMenuLink>
-            </Link>
-          </NavigationMenuItem>
-          <NavigationMenuItem>
             <Link href="/theater" legacyBehavior passHref>
               <NavigationMenuLink
                 className={navigationMenuTriggerStyle()}
@@ -58,6 +47,17 @@ export default function NavBar() {
                 data-active={isActive('/theater') ? true : undefined}
               >
                 Θεατρο
+              </NavigationMenuLink>
+            </Link>
+          </NavigationMenuItem>
+          <NavigationMenuItem>
+            <Link href="/about-us" legacyBehavior passHref>
+              <NavigationMenuLink
+                className={navigationMenuTriggerStyle()}
+                aria-label="About Us"
+                data-active={isActive('/about-us') ? true : undefined}
+              >
+                Ποιοι ειμαστε
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
@@ -73,17 +73,6 @@ export default function NavBar() {
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <Link href="/contact-us" legacyBehavior passHref>
-              <NavigationMenuLink
-                className={navigationMenuTriggerStyle()}
-                aria-label="Contact Us"
-                data-active={isActive('/contact-us') ? true : undefined}
-              >
-                Επικοινωνια
-              </NavigationMenuLink>
-            </Link>
-          </NavigationMenuItem>
-          <NavigationMenuItem>
             <Link href="/archive" legacyBehavior passHref>
               <NavigationMenuLink
                 className={navigationMenuTriggerStyle()}
@@ -91,6 +80,17 @@ export default function NavBar() {
                 data-active={isActive('/archive') ? true : undefined}
               >
                 Αρχειο
+              </NavigationMenuLink>
+            </Link>
+          </NavigationMenuItem>
+          <NavigationMenuItem>
+            <Link href="/contact-us" legacyBehavior passHref>
+              <NavigationMenuLink
+                className={navigationMenuTriggerStyle()}
+                aria-label="Contact Us"
+                data-active={isActive('/contact-us') ? true : undefined}
+              >
+                Επικοινωνια
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
