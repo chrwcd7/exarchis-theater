@@ -21,27 +21,37 @@ export default function NavBar() {
         <NavigationMenuList className="flex flex-col items-start sm:flex-row">
           <NavigationMenuItem>
             <Link href="/about-us" legacyBehavior passHref>
-              <NavigationMenuLink className={navigationMenuTriggerStyle()}>Ποιοι ειμαστε</NavigationMenuLink>
+              <NavigationMenuLink className={navigationMenuTriggerStyle()} aria-label="About Us">
+                Ποιοι ειμαστε
+              </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
             <Link href="/theater" legacyBehavior passHref>
-              <NavigationMenuLink className={navigationMenuTriggerStyle()}>Θεατρο</NavigationMenuLink>
+              <NavigationMenuLink className={navigationMenuTriggerStyle()} aria-label="Theater">
+                Θεατρο
+              </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
             <Link href="/news" legacyBehavior passHref>
-              <NavigationMenuLink className={navigationMenuTriggerStyle()}>Νεα</NavigationMenuLink>
+              <NavigationMenuLink className={navigationMenuTriggerStyle()} aria-label="News">
+                Νεα
+              </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
             <Link href="/contact-us" legacyBehavior passHref>
-              <NavigationMenuLink className={navigationMenuTriggerStyle()}>Επικοινωνια</NavigationMenuLink>
+              <NavigationMenuLink className={navigationMenuTriggerStyle()} aria-label="Contact Us">
+                Επικοινωνια
+              </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
             <Link href="/archive" legacyBehavior passHref>
-              <NavigationMenuLink className={navigationMenuTriggerStyle()}>Αρχειο</NavigationMenuLink>
+              <NavigationMenuLink className={navigationMenuTriggerStyle()} aria-label="Archive">
+                Αρχειο
+              </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
         </NavigationMenuList>
