@@ -71,7 +71,7 @@ export default function ImageGallery({ images = [] }: { images: string[] }) {
     <>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {images.map((src, index) => (
-          <div key={index} onClick={() => openSlider(index)} className="flex justify-center">
+          <div key={src} className="flex justify-center">
             <Image
               src={src}
               alt={`${pathname} image ${index + 1}`}
@@ -79,6 +79,7 @@ export default function ImageGallery({ images = [] }: { images: string[] }) {
               height="300"
               className="max-h-60 self-center object-cover aspect-auto cursor-pointer transition-transform transform hover:scale-105"
               priority={pathname === '/archive'}
+              onClick={() => openSlider(index)}
             />
           </div>
         ))}
