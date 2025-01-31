@@ -1,8 +1,8 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-It contains the website of Exarchis theater, a theater venue in Athens, Greece.
+It contains the website of Exarchis, a theater venue in Athens, Greece.
 
-## Technologies used
+## Technologies
 
 This project is using the latest version of React/ Next.js as well as Tailwind CSS.
 
