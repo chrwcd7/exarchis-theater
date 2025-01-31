@@ -22,7 +22,7 @@ export default function NavBar() {
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const isActive = (route: string) => pathname === route;
+  const isActive = (route: string) => pathname.includes(route);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
