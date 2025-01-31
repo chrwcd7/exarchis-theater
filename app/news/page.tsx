@@ -14,10 +14,10 @@ const News = () => {
           key={article.id}
           className="mb-8 bg-white p-6 rounded-lg shadow-md transition-transform transform hover:scale-105 last:mb-0"
         >
-          <Link href={`/news/${article.id}`}>
-            <h2 className="text-2xl font-bold mb-2 text-blue-500">{article.title}</h2>
-            <p className="text-gray-600 mb-4">{article.date}</p>
-            <p className="text-lg leading-relaxed">{article.content}</p>
+          <Link href={`/news/${article.id}`} className="!no-underline">
+            <h2 className="text-2xl mb-2">{article.title}</h2>
+            <p className="text-gray-600 mb-4 font-normal">{article.date}</p>
+            <p className="text-lg leading-relaxed text-black font-normal">{article.content}</p>
           </Link>
         </article>
       ))}
