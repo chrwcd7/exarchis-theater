@@ -12,7 +12,7 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   navigationMenuTriggerStyle,
-} from '@/components/ui/navigation-menu';
+} from './NavigationMenu';
 import logo from '../../public/exarchis_logo.jpg';
 
 export default function NavBar() {
