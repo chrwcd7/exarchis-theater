@@ -22,7 +22,7 @@ export default function NavBar() {
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const isActive = (route: string) => pathname.includes(route);
+  const isActive = (route: string) => pathname.split('/')[1] === route;
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -63,7 +63,7 @@ export default function NavBar() {
               <NavigationMenuLink
                 className={navigationMenuTriggerStyle()}
                 aria-label="Theater"
-                data-active={isActive('/theater') ? true : undefined}
+                data-active={isActive('theater') ? true : undefined}
               >
                 Θεατρο
               </NavigationMenuLink>
@@ -74,7 +74,7 @@ export default function NavBar() {
               <NavigationMenuLink
                 className={navigationMenuTriggerStyle()}
                 aria-label="Theater lab"
-                data-active={isActive('/theater-lab') ? true : undefined}
+                data-active={isActive('theater-lab') ? true : undefined}
               >
                 Εργαστηρι Θεατρου
               </NavigationMenuLink>
@@ -85,7 +85,7 @@ export default function NavBar() {
               <NavigationMenuLink
                 className={navigationMenuTriggerStyle()}
                 aria-label="Archive"
-                data-active={isActive('/archive') ? true : undefined}
+                data-active={isActive('archive') ? true : undefined}
               >
                 Αρχειο
               </NavigationMenuLink>
@@ -96,7 +96,7 @@ export default function NavBar() {
               <NavigationMenuLink
                 className={navigationMenuTriggerStyle()}
                 aria-label="About Us"
-                data-active={isActive('/about-us') ? true : undefined}
+                data-active={isActive('about-us') ? true : undefined}
               >
                 Ποιοι ειμαστε
               </NavigationMenuLink>
@@ -107,7 +107,7 @@ export default function NavBar() {
               <NavigationMenuLink
                 className={navigationMenuTriggerStyle()}
                 aria-label="News"
-                data-active={isActive('/news') ? true : undefined}
+                data-active={isActive('news') ? true : undefined}
               >
                 Νεα
               </NavigationMenuLink>
@@ -118,7 +118,7 @@ export default function NavBar() {
               <NavigationMenuLink
                 className={navigationMenuTriggerStyle()}
                 aria-label="Contact Us"
-                data-active={isActive('/contact-us') ? true : undefined}
+                data-active={isActive('contact-us') ? true : undefined}
               >
                 Επικοινωνια
               </NavigationMenuLink>
