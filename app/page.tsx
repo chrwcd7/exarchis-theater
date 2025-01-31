@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div className="container mx-auto px-4 py-8">
+    <>
       <section className="text-center mb-8">
         <h1 className="text-4xl font-bold mb-4">Θέατρο Εξ Αρχής</h1>
       </section>
@@ -45,6 +45,6 @@ export default function Home() {
       <section className="text-center">
         <p>Σας ευχαριστούμε που υποστηρίζετε το Θέατρο Εξ Αρχής. Ανυπομονούμε να σας δούμε από κοντά!</p>
       </section>
-    </div>
+    </>
   );
 }

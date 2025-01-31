@@ -16,11 +16,11 @@ const NewsDetails = () => {
   }
 
   return (
-    <div className="container mx-auto py-8 px-4">
+    <>
       <h1 className="text-3xl font-bold mb-6">{article.title}</h1>
       <p className="text-gray-600 mb-4">{article.date}</p>
       <p className="text-lg leading-relaxed">{article.content}</p>
-    </div>
+    </>
   );
 };
 

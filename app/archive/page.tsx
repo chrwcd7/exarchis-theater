@@ -9,14 +9,14 @@ const ArchiveContent = () => {
   const { selectedYear } = useYear();
 
   return (
-    <main className="flex-grow p-8">
+    <div className="flex-grow p-8">
       <h1 className="text-3xl font-bold mb-4">Αρχείο</h1>
       <div>
         <h2 className="text-2xl font-semibold mb-4">Έτος {selectedYear}</h2>
         <p>Displaying archive content for the year {selectedYear}.</p>
         {/* Add more content related to the selected year here */}
       </div>
-    </main>
+    </div>
   );
 };
 

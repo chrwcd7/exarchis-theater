@@ -5,7 +5,7 @@ import dinosSpyropoulosImg from '../../public/dinos-spyropoulos.jpg';
 
 export default function AboutUs() {
   return (
-    <div className="container mx-auto py-8 px-4">
+    <>
       <section className="mb-8 bg-white p-6 rounded-lg shadow-md">
         <h1 className="text-3xl font-bold mb-4">Οι Θεατρικοί Ορίζοντες</h1>
         <p className="text-lg leading-relaxed">
@@ -27,7 +27,13 @@ export default function AboutUs() {
       </section>
       <section className="mb-8 bg-white p-6 rounded-lg shadow-md">
         <h1 className="text-4xl font-bold mb-4">Ελένη Τσακάλου</h1>
-        <Image src={eleniTsakalouImg} alt="Ελένη Τσακάλου" width={200} height={200} className="mb-4 rounded-full object-cover" />
+        <Image
+          src={eleniTsakalouImg}
+          alt="Ελένη Τσακάλου"
+          width={200}
+          height={200}
+          className="mb-4 rounded-full object-cover"
+        />
         <p className="text-lg leading-relaxed">
           Η Ελένη Τσακάλου είναι μια εξαιρετικά ταλαντούχα ηθοποιός και σκηνοθέτης με πολυετή εμπειρία στο θέατρο. Με σπουδές
           στην υποκριτική και τη σκηνοθεσία, η Ελένη έχει συμμετάσχει σε πολλές επιτυχημένες παραγωγές, κερδίζοντας την
@@ -37,7 +43,13 @@ export default function AboutUs() {
       </section>
       <section className="mb-8 bg-white p-6 rounded-lg shadow-md">
         <h1 className="text-4xl font-bold mb-4">Ντίνος Σπυρόπουλος</h1>
-        <Image src={dinosSpyropoulosImg} alt="Ντίνος Σπυρόπουλος" width={200} height={200} className="mb-4 rounded-full object-cover" />
+        <Image
+          src={dinosSpyropoulosImg}
+          alt="Ντίνος Σπυρόπουλος"
+          width={200}
+          height={200}
+          className="mb-4 rounded-full object-cover"
+        />
         <p className="text-lg leading-relaxed">
           Ο Ντίνος Σπυρόπουλος είναι ένας εξαιρετικά ταλαντούχος ηθοποιός και σκηνοθέτης με πολυετή εμπειρία στο θέατρο. Με
           σπουδές στην υποκριτική και τη σκηνοθεσία, ο Ντίνος έχει συμμετάσχει σε πολλές επιτυχημένες παραγωγές, κερδίζοντας την
@@ -45,6 +57,6 @@ export default function AboutUs() {
           είναι εμφανής σε κάθε παράσταση που παρουσιάζει, προσφέροντας αξέχαστες εμπειρίες στους θεατές.
         </p>
       </section>
-    </div>
+    </>
   );
 }

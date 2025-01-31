@@ -38,7 +38,7 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="flex justify-center items-center p-5 bg-gray-100">
+    <div className="flex justify-center items-center">
       <form className="bg-white p-8 rounded-lg shadow-md w-full max-w-md" onSubmit={handleSubmit}>
         <h2 className="text-2xl font-bold mb-6 text-gray-800">Επικοινωνήστε μαζί μας</h2>
         <div className="mb-4">
