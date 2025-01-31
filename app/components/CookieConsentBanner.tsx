@@ -5,7 +5,6 @@ import CookieConsent from 'react-cookie-consent';
 export default function CookieConsentBanner() {
   return (
     <CookieConsent
-      debug
       cookieName="CookieConsent"
       buttonText="Εντάξει"
       style={{ background: '#2B373B', textAlign: 'center', justifyContent: 'center' }}
