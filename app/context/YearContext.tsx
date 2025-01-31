@@ -9,9 +9,8 @@ interface YearContextProps {
 
 const YearContext = createContext<YearContextProps | undefined>(undefined);
 
-export const YearProvider = ({ children }: { children: ReactNode }) => {
-  const currentYear = new Date().getFullYear();
-  const [selectedYear, setSelectedYear] = useState<number | null>(currentYear);
+export const YearProvider = ({ children, initialYear }: { children: ReactNode; initialYear: number }) => {
+  const [selectedYear, setSelectedYear] = useState<number | null>(initialYear);
 
   return <YearContext value={{ selectedYear, setSelectedYear }}>{children}</YearContext>;
 };

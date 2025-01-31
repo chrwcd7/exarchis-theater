@@ -4,6 +4,7 @@ import React from 'react';
 
 import Sidebar from '../components/Sidebar';
 import { YearProvider, useYear } from '../context/YearContext';
+import { plays } from '../archive/plays';
 
 const ArchiveContent = () => {
   const { selectedYear } = useYear();
@@ -21,8 +22,11 @@ const ArchiveContent = () => {
 };
 
 const Archive = () => {
+  // Find the most recent year from the plays object
+  const mostRecentYear = Math.max(...plays.map((play) => play.year));
+
   return (
-    <YearProvider>
+    <YearProvider initialYear={mostRecentYear}>
       <div className="flex min-h-screen">
         <Sidebar />
         <ArchiveContent />
