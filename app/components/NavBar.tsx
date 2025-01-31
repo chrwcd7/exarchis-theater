@@ -42,8 +42,9 @@ export default function NavBar() {
           <NavigationMenuItem>
             <Link href="/about-us" legacyBehavior passHref>
               <NavigationMenuLink
-                className={`${navigationMenuTriggerStyle()} ${isActive('/about-us') ? 'bg-blue-500' : ''}`}
+                className={navigationMenuTriggerStyle()}
                 aria-label="About Us"
+                data-active={isActive('/about-us') ? true : undefined}
               >
                 Ποιοι ειμαστε
               </NavigationMenuLink>
@@ -52,8 +53,9 @@ export default function NavBar() {
           <NavigationMenuItem>
             <Link href="/theater" legacyBehavior passHref>
               <NavigationMenuLink
-                className={`${navigationMenuTriggerStyle()} ${isActive('/theater') ? 'bg-blue-500' : ''}`}
+                className={navigationMenuTriggerStyle()}
                 aria-label="Theater"
+                data-active={isActive('/theater') ? true : undefined}
               >
                 Θεατρο
               </NavigationMenuLink>
@@ -62,8 +64,9 @@ export default function NavBar() {
           <NavigationMenuItem>
             <Link href="/news" legacyBehavior passHref>
               <NavigationMenuLink
-                className={`${navigationMenuTriggerStyle()} ${isActive('/news') ? 'bg-blue-500' : ''}`}
+                className={navigationMenuTriggerStyle()}
                 aria-label="News"
+                data-active={isActive('/news') ? true : undefined}
               >
                 Νεα
               </NavigationMenuLink>
@@ -72,8 +75,9 @@ export default function NavBar() {
           <NavigationMenuItem>
             <Link href="/contact-us" legacyBehavior passHref>
               <NavigationMenuLink
-                className={`${navigationMenuTriggerStyle()} ${isActive('/contact-us') ? 'bg-blue-500' : ''}`}
+                className={navigationMenuTriggerStyle()}
                 aria-label="Contact Us"
+                data-active={isActive('/contact-us') ? true : undefined}
               >
                 Επικοινωνια
               </NavigationMenuLink>
@@ -82,8 +86,9 @@ export default function NavBar() {
           <NavigationMenuItem>
             <Link href="/archive" legacyBehavior passHref>
               <NavigationMenuLink
-                className={`${navigationMenuTriggerStyle()} ${isActive('/archive') ? 'bg-blue-500' : ''}`}
+                className={navigationMenuTriggerStyle()}
                 aria-label="Archive"
+                data-active={isActive('/archive') ? true : undefined}
               >
                 Αρχειο
               </NavigationMenuLink>
