@@ -1,8 +1,12 @@
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCopyright } from '@fortawesome/free-solid-svg-icons';
+
 import './globals.css';
 import NavBar from './components/NavBar';
 import CookieConsentBanner from './components/CookieConsentBanner';
+import Link from 'next/link';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -65,7 +69,15 @@ export default function RootLayout({
                 </a>
               </p>
             </div>
-            <p>&copy; 2025 Θέατρο Εξ Αρχής. All rights reserved.</p>
+            <p>
+              &copy; 2025 Θέατρο Εξ Αρχής
+              <span className="text-xs text-gray-500 ml-4">
+                Developed by{' '}
+                <Link href="https://github.com/chrwcd7" target="_blank" className="text-teal-50/50">
+                  chrwcd7
+                </Link>
+              </span>
+            </p>
           </div>
         </footer>
         <CookieConsentBanner />
