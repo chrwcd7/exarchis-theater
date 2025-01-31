@@ -30,8 +30,8 @@ const Sidebar = ({ closeSidebar }: { closeSidebar: () => void }) => {
           <li key={year} className="mb-2">
             <button
               onClick={() => handleYearClick(year)}
-              className={`text-teal-500 hover:underline ${
-                selectedYear === year ? 'bg-teal-500 !text-white font-bold' : ''
+              className={`text-teal-700 hover:underline ${
+                selectedYear === year ? 'bg-teal-700 !text-white font-bold' : ''
               } px-4 py-2 rounded`}
             >
               {year}

@@ -17,7 +17,7 @@ const ArchiveContent = ({ toggleSidebar }: { toggleSidebar: () => void }) => {
       <h1 className="text-3xl font-bold mb-4">Αρχείο</h1>
       <div className="flex flex-col items-center lg:items-start">
         <h2 className="text-2xl font-semibold mb-4" onClick={toggleSidebar}>
-          Έτος <span className="text-teal-500 lg:text-black">{selectedYear}</span>
+          Έτος <span className="text-teal-700 lg:text-black">{selectedYear}</span>
         </h2>
         <div className="flex flex-col gap-8">
           {filteredPlays.map((play, index) => (
@@ -60,7 +60,7 @@ const Archive = () => {
     <YearProvider initialYear={mostRecentYear}>
       <div className="flex min-h-screen">
         <button
-          className="absolute text-white bg-teal-500 p-2 rounded m-4 lg:hidden"
+          className="absolute text-white bg-teal-700 p-2 rounded m-4 lg:hidden"
           onClick={toggleSidebar}
           aria-label="Toggle sidebar"
         >
