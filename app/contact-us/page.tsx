@@ -98,6 +98,7 @@ const ContactUs = () => {
         allowFullScreen
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
+        title="Google maps iframe"
       ></iframe>
     </div>
   );
