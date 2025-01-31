@@ -1,13 +1,33 @@
-# Θέατρο Εξ Αρχής
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-Καλώς ορίσατε στην επίσημη ιστοσελίδα του θεάτρου Εξ Αρχής, ενός δυναμικού χώρου τέχνης στην καρδιά της Αθήνας.
+It contains the website of Exarchis theater, a theater venue in Athens, Greece.
 
-## Σχετικά με το θέατρο
+## Technologies used
 
-Η [σελίδα](https://theatroexarchis.gr) παρέχει πληροφορίες για νέες και προηγούμενες παραστάσεις, μαθήματα θεάτρου και ό,τι άλλο αφορά την εμπειρία της υποκριτικής τέχνης. Το θέατρο ιδρύθηκε το 2004 από την ομάδα "Θεατρικοί Ορίζοντες" στα Εξάρχεια, όπου βρίσκεται μέχρι σήμερα. Στο χώρο στεγάζονται θέατρο και εργαστήρι θεάτρου και φιλοξενούνται πολιτιστικές εκδηλώσεις θεατρικού, μουσικού αλλά και εικαστικού ενδιαφέροντος.
+This project is using the latest version of React/ Next.js as well as Tailwind CSS.
 
-## Μείνετε Συνδεδεμένοι
+Other modern libraries are also used, for making the whole website smooth and responsive.
 
-Ακολουθήστε μας στο [Facebook](https://www.facebook.com/ExArchesTheatro) και στο [Instagram](https://www.instagram.com/exarchis.theatre/) για να λαμβάνετε τις τελευταίες ενημερώσεις σχετικά με τις επερχόμενες παραστάσεις, εκδηλώσεις, αλλά και παρασκηνιακές ματιές στις παραγωγές μας. Γίνετε μέλος της ομάδας μας και των όσων συμβαίνουν εντός και εκτός σκηνής.
+## Getting Started
 
-Σας ευχαριστούμε που υποστηρίζετε το Θέατρο Εξ Αρχής. Ανυπομονούμε να σας δούμε από κοντά!
+If you want to run the project locally, start the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+You can start editing the homepage by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+
+## Learn More
+
+To learn more about Exarchis theater, visit the [website](https://theatroexarchis.gr).
+
+If you have any suggestions for improving the design/ layout of the website, please feel free to contact me.
