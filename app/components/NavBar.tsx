@@ -43,7 +43,9 @@ export default function NavBar() {
           <Image src={logo} alt="Exarchis logo" className="w-24 h-24" priority />
         </Link>
         <button
-          className={`sm:hidden text-white transition-transform duration-300 ${isMenuOpen ? 'rotate-90' : ''}`}
+          className={`text-white transition-transform duration-300 flex items-center ${
+            isMenuOpen ? 'rotate-90' : ''
+          } sm:hidden`}
           onClick={toggleMenu}
           aria-label="Toggle navigation menu"
         >
