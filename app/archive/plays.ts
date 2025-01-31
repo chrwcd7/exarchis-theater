@@ -5,12 +5,12 @@ export const plays = [
     screenwriter: 'της Ελένης Τσακάλου',
   },
   {
-    year: 2024,
+    year: 2022,
     title: 'Παίζοντας με τον παππού Αριστοφάνη',
     screenwriter: 'του Ντίνου Σπυρόπουλου',
   },
   {
-    year: 2020,
+    year: 2015,
     title: 'Η Χιονάτη',
     screenwriter: 'των αδελφών Γκριμ',
     tag: 'Θέατρο για παιδιά',
@@ -21,29 +21,29 @@ export const plays = [
     screenwriter: 'του Άντον Τσέχοφ',
   },
   {
-    year: 2020,
+    year: 2013,
     title: 'Η Κοκκινοσκουφίτσα',
     screenwriter: 'του Σάρλ Περώ',
     tag: 'Θέατρο για παιδιά',
   },
   {
-    year: 2018,
+    year: 2016,
     title: 'Τα Παντρολογήματα',
     screenwriter: 'του Νικολάι Γκόγκολ',
   },
   {
-    year: 2018,
+    year: 2017,
     title: 'Ο Κοντορεβιθούλης',
     screenwriter: 'του Σάρλ Περώ',
     tag: 'Θέατρο για παιδιά',
   },
   {
-    year: 2016,
+    year: 2015,
     title: 'Η παρέλαση',
     screenwriter: 'της Λούλας Αναγνωστάκη',
   },
   {
-    year: 2016,
+    year: 2015,
     title: 'Ο ουρανός κατακόκκινος',
     screenwriter: 'της Λούλας Αναγνωστάκη',
   },
@@ -58,7 +58,7 @@ export const plays = [
     screenwriter: 'του Πάτρικ Ζίσκιντ',
   },
   {
-    year: 2014,
+    year: 2013,
     title: 'Οι Καρέκλες',
     screenwriter: 'του Ευγένιου Ιονέσκο',
   },
@@ -78,7 +78,7 @@ export const plays = [
     screenwriter: 'του Ευγένιου Ιονέσκο',
   },
   {
-    year: 2009,
+    year: 2008,
     title: 'Γκόλφω Forever',
     screenwriter: 'του Ντίνου Σπυρόπουλου',
   },
@@ -91,5 +91,10 @@ export const plays = [
     year: 2007,
     title: 'De profundis',
     screenwriter: 'του Όσκαρ Ουάιλντ',
+  },
+  {
+    year: 2006,
+    title: 'Λυσιστράτη Live',
+    screenwriter: '',
   },
 ];
