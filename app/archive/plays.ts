@@ -125,7 +125,7 @@ export const plays = [
   {
     year: 2006,
     title: 'Λυσιστράτη Live',
-    screenwriter: '',
+    screenwriter: 'παρωδία του Ντίνου Σπυρόπουλου',
     images: [],
   },
 ];
