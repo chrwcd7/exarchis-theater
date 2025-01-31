@@ -1,6 +1,9 @@
 'use client';
 
 import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCalendarDays } from '@fortawesome/free-solid-svg-icons';
+
 import Sidebar from '../components/Sidebar';
 import { YearProvider, useYear } from '../context/YearContext';
 import { plays } from '../archive/plays';
@@ -56,20 +59,13 @@ const Archive = () => {
 
   return (
     <YearProvider initialYear={mostRecentYear}>
-      <div className="flex min-h-screen">
+      <div className="flex">
         <button
-          className="absolute text-white bg-teal-700 p-2 rounded m-4 lg:hidden"
+          className="flex items-center absolute text-white bg-teal-700 p-2 rounded m-4 lg:hidden"
           onClick={toggleSidebar}
           aria-label="Toggle sidebar"
         >
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M3 4a1 1 0 011-1h16a1 1 0 011 1v16a1 1 0 01-1 1H4a1 1 0 01-1-1V4zm1 0v16h16V4H4zm4 2h8v2H8V6zm0 4h8v2H8v-2zm0 4h8v2H8v-2z"
-            ></path>
-          </svg>
+          <FontAwesomeIcon icon={faCalendarDays} className="w-6 h-6" />
         </button>
         <div
           className={`fixed inset-0 z-50 bg-black bg-opacity-50 lg:hidden ${isSidebarOpen ? 'block' : 'hidden'}`}
