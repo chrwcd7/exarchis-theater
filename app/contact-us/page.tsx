@@ -18,14 +18,16 @@ const ContactUs = () => {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          to: 'exarhistheatro@gmail.com',
-          subject: 'Υποβολή φόρμας επικοινωνίας Εξ Αρχής',
-          text: `Όνομα: ${name}\nEmail: ${email}\nΜήνυμα: ${message}`,
+          name,
+          email,
+          message,
+          // Access key is public, no need to hide it
+          access_key: '12b7b2bd-a325-434c-9ad6-0cd4dcc73d56',
         }),
       });
 
       if (response.ok) {
-        toast.success('Το μήνυμα στάλθηκε επιτυχώς!');
+        toast.success('Το μήνυμα εστάλη επιτυχώς!');
         setName('');
         setEmail('');
         setMessage('');
