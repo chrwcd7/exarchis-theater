@@ -43,7 +43,7 @@ export default function NavBar() {
           <Image src={logo} alt="Exarchis logo" className="w-24 h-auto aspect-auto" priority />
         </Link>
         <button
-          className={`text-white transition-transform duration-300 h-fit self-center ${
+          className={`text-white transition-transform duration-300 h-fit self-center flex items-center ${
             isMenuOpen ? 'rotate-90' : ''
           } sm:hidden`}
           onClick={toggleMenu}
