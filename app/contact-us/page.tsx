@@ -39,7 +39,7 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="flex justify-center items-center">
+    <div className="flex flex-col justify-center items-center gap-4 lg:flex-row">
       <form className="bg-background p-8 rounded-lg shadow-md w-full max-w-md" onSubmit={handleSubmit}>
         <h2 className="text-2xl text-primary font-bold mb-6 text-gray-800">Επικοινωνήστε μαζί μας</h2>
         <div className="mb-4">
@@ -85,6 +85,14 @@ const ContactUs = () => {
         </button>
       </form>
       <ToastContainer />
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.4733022017754!2d23.732729175406803!3d37.989419299767356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd172dbfe379%3A0x8f656a2707ead660!2zzpXOviDOkc-Bz4fOrs-C!5e0!3m2!1sen!2sgr!4v1737563229804!5m2!1sen!2sgr"
+        className="w-full max-w-md rounded-lg"
+        height={450}
+        allowFullScreen
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      ></iframe>
     </div>
   );
 };
