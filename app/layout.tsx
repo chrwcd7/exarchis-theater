@@ -35,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased w-screen flex flex-col min-h-screen bg-gray-100 dark:bg-gray-900`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased w-screen flex flex-col min-h-screen overflow-x-hidden bg-gray-100 dark:bg-gray-900`}
       >
         <header>
           <div className="container mx-auto flex flex-col">
