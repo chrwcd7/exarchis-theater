@@ -3,13 +3,17 @@ export const plays = [
     year: 2024,
     title: 'Πες μου ένα παραμύθι',
     screenwriter: 'της Ελένης Τσακάλου',
-    images: ['/archive/Πες μου ένα παραμύθι.jpg'],
+    images: ['/archive/Πες μου ένα παραμύθι.jpg', '/archive/Πες μου ένα παραμύθι 1.jpg', '/archive/Πες μου ένα παραμύθι 2.jpg'],
   },
   {
     year: 2022,
     title: 'Παίζοντας με τον παππού Αριστοφάνη',
     screenwriter: 'του Ντίνου Σπυρόπουλου',
-    images: ['/archive/Παίζοντας με τον Αριστοφάνη 1.png', '/archive/Παίζοντας με τον Αριστοφάνη 2.jpg'],
+    images: [
+      '/archive/Παίζοντας με τον Αριστοφάνη 1.png',
+      '/archive/Παίζοντας με τον Αριστοφάνη 2.jpg',
+      '/archive/Παίζοντας με τον Αριστοφάνη 3.jpg',
+    ],
   },
   {
     year: 2015,
@@ -65,6 +69,7 @@ export const plays = [
     title: 'Τα αυγά της στρουθοκαμήλου',
     screenwriter: 'του Χρήστου Ναούμ',
     images: [
+      '/archive/Τα αυγά της Στρουθοκαμήλου.jpg',
       '/archive/Τα αυγά της Στρουθοκαμήλου 1.jpg',
       '/archive/Τα αυγά της Στρουθοκαμήλου 2.jpg',
       '/archive/Τα αυγά της Στρουθοκαμήλου 3.jpg',
@@ -74,7 +79,7 @@ export const plays = [
     year: 2014,
     title: 'Το κοντραμπάσο',
     screenwriter: 'του Πάτρικ Ζίσκιντ',
-    images: ['/archive/Το Κοντραμπάσο.avif'],
+    images: ['/archive/Κοντραμπάσο.avif', '/archive/Κοντραμπάσο 1.jpg', '/archive/Κοντραμπάσο 2.jpg'],
   },
   {
     year: 2013,
@@ -86,7 +91,7 @@ export const plays = [
     year: 2012,
     title: 'Είμαι χάλια',
     screenwriter: 'του Ντίνου Σπυρόπουλου',
-    images: ['/archive/Είμαι χάλια.png'],
+    images: ['/archive/Είμαι χάλια.png', '/archive/Είμαι χάλια 1.jpg'],
   },
   {
     year: 2011,
@@ -108,7 +113,14 @@ export const plays = [
     year: 2008,
     title: 'Γκόλφω forever',
     screenwriter: 'του Ντίνου Σπυρόπουλου',
-    images: ['/archive/Γκόλφω Forever.jpg'],
+    images: [
+      '/archive/Γκόλφω.jpg',
+      '/archive/Γκόλφω 1.jpg',
+      '/archive/Γκόλφω 2.jpg',
+      '/archive/Γκόλφω 3.jpg',
+      '/archive/Γκόλφω 4.jpg',
+      '/archive/Γκόλφω 5.jpg',
+    ],
   },
   {
     year: 2007,
