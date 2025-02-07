@@ -79,7 +79,7 @@ export const plays = [
     year: 2014,
     title: 'Το κοντραμπάσο',
     screenwriter: 'του Πάτρικ Ζίσκιντ',
-    images: ['/archive/Κοντραμπάσο.avif', '/archive/Κοντραμπάσο 1.jpg', '/archive/Κοντραμπάσο 2.jpg'],
+    images: ['/archive/Κοντραμπάσο 1.jpg', '/archive/Κοντραμπάσο 2.jpg'],
   },
   {
     year: 2013,
