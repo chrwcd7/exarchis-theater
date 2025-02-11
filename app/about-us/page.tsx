@@ -35,7 +35,7 @@ export default function AboutUs() {
             alt="Ελένη Τσακάλου"
             className="w-40 h-40 mb-4 rounded-full object-cover object-top bg-accent"
           />
-          <div className="line-clamp-5 hover:line-clamp-none">
+          <div className="line-clamp-5 hover:line-clamp-none lg:line-clamp-none">
             <p className="mb-4">
               Γεννήθηκε στη Στυλίδα Φθιώτιδας και μεγάλωσε στον Πειραιά. Μετά το λύκειο συνέχισε τις σπουδές της στην Ανώτερη
               Δραματική Σχολή Αθηνών του Βασίλη Ρίτσου και στο τμήμα Θεατρικών Σπουδών του Πανεπιστημίου Πατρών, απ&apos; όπου
@@ -79,7 +79,7 @@ export default function AboutUs() {
             alt="Ντίνος Σπυρόπουλος"
             className="w-40 h-40 mb-4 rounded-full object-cover bg-accent"
           />
-          <div className="line-clamp-5 hover:line-clamp-none">
+          <div className="line-clamp-5 hover:line-clamp-none lg:line-clamp-none">
             <p className="mb-4">
               Ο Ντίνος Σπυρόπουλος γεννήθηκε στo Καγκάδι Αχαΐας. Τελείωσε τη δραματική σχολή Βασίλη Ρίτσου. Έχει παίξει μεταξύ
               άλλων στο ΔΗ.ΠΕ.ΘΕ. Αγρινίου στα Έργα «Δύσκολος του Μένανδρου», «Ειρήνη» του Αριστοφάνη, «Ματωμένος Γάμος» του
